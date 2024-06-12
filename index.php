@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script defer type="module" src="./assets/js/script.js"></script>
-    <title>Document</title>
+    <title>AZ Store</title>
 </head>
 <body>
-    
+    <header>
+        <?php
+            include('./assets/backend/php/navbar.php');
+        ?>
+    </header>
+    <main></main>
+    <footer>
+        <?php
+            include('./assets/backend/php/footer.php');
+        ?>
+    </footer>
 </body>
 </html>
