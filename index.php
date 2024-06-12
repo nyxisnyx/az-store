@@ -13,7 +13,11 @@
             include('./assets/backend/php/navbar.php');
         ?>
     </header>
-    <main></main>
+    <main>
+        <?php 
+            include('./assets/backend/php/main.php');
+        ?>
+    </main>
     <footer>
         <?php
             include('./assets/backend/php/footer.php');

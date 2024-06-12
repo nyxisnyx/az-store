@@ -3,28 +3,28 @@
         "id":0,
         "name":"nike",
         "price":234,
-        "image":"/assets/images/shoes/shoe_one.png"
+        "image":"./assets/images/shoes/shoe_one.png"
 
     },
     {
         "id":1,
         "name":"nike",
         "price":234,
-        "image":"/assets/images/shoes/shoe_one.png"
+        "image":"./assets/images/shoes/shoe_one.png"
 
     },
     {
         "id":2,
         "name":"nike",
         "price":234,
-        "image":"/assets/images/shoes/shoe_one.png"
+        "image":"./assets/images/shoes/shoe_one.png"
 
     },
     {
         "id":3,
         "name":"nike",
         "price":234,
-        "image":"/assets/images/shoes/shoe_one.png"
+        "image":"./assets/images/shoes/shoe_one.png"
 
     }
     
