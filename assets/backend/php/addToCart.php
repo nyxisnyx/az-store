@@ -1,42 +1,46 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+session_start(); // Start the session
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $json = file_get_contents('php://input');
-    $data = json_decode($json, true);
-    $id = $data['id'];
-    echo $id;
+    // get the raw data then convert it to php.
+    $data = file_get_contents('php://input');
+    $json_data = json_decode($data, true);
 
-    // Read the products data
+    //get the data from the db 
     $productsJson = file_get_contents('./../db/product_db.json');
     $products = json_decode($productsJson, true);
 
-    // Find the product to add
-    $productToAdd = null;
-    foreach ($products as $product) {
-        if ($product['id'] === $id) {
-            $productToAdd = $product;
-            break;
+    if ($json_data) {
+
+        foreach( $products as $product ) {
+            $_SESSION['user_name']='user';
+            if( $json_data['id'] == $product['id'] ) {
+                $_SESSION['cart'][]=[ 
+                    $product['id'],
+                     $product['name'],
+                      $product['price'],
+                       $product['image']];  
+                }
         }
+
+        // Prepare a response
+        $response = [
+            'status' => 'success',
+            'message' => 'Data received successfully',
+            'data' => $_SESSION['cart']
+        ];
+    } else {
+        // If not JSON, prepare an error response
+        $response = [
+            'status' => 'error',
+            'message' => 'Invalid data format'
+        ];
     }
 
-    if ($productToAdd !== null) {
-        // Read the cart data
-        $cartJson = file_get_contents('./../db/shopingCart_db.json');
-        $cart = json_decode($cartJson, true);
+    // Set the Content-Type to application/json
+    header('Content-Type: application/json');
 
-        // Add the product to the cart
-        $cart[] = $productToAdd;
-
-        // Write the updated cart data back to the file
-        $cartJson = json_encode($cart);
-        file_put_contents('./../db/shopingCart_db.json', $cartJson);
-        echo json_encode(['message' => 'Item added to cart']);
-    }else{
-        echo json_encode(['message'=> 'j ai rien recu']);
-    }
-
+    // Print the response as a JSON string
+    echo json_encode($response);
 }
 
