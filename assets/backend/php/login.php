@@ -17,7 +17,12 @@
    
     </header>
     <main>
+
     <div class="container" id="registration-form-container">
+        <div id="container-btn">
+            <button class="btn-display-n">x</button>
+        </div>
+       
         <h1>Formulaire d'inscription</h1>
         <form action="#" method="post">
             <!-- form for login -->
@@ -54,9 +59,7 @@
             </div>
         </form>
     </div>
-        <?php 
-            include('./main.php');
-        ?>
+    
     </main>
     <footer>
         <?php

@@ -98,7 +98,7 @@ body {
   padding: 20px;
   background-color: #f4f4f4;
 }
-body .container {
+body main .container {
   display: none;
   max-width: 600px;
   margin: 0 auto;
@@ -107,24 +107,28 @@ body .container {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-body .container form h1 {
+body main .container #container-btn {
+  display: flex;
+  justify-content: end;
+}
+body main .container form h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-body .container form label {
+body main .container form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-body .container form input[type=text],
-body .container form input[type=email] {
+body main .container form input[type=text],
+body main .container form input[type=email] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-body .container form button {
+body main .container form button {
   width: 100%;
   padding: 10px;
   background-color: #5cb85c;
@@ -133,7 +137,7 @@ body .container form button {
   color: #fff;
   font-size: 16px;
 }
-body .container form button:hover {
+body main .container form button:hover {
   background-color: #4cae4c;
 }
 
