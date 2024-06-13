@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($json_data) {
 
         foreach( $products as $product ) {
-            $_SESSION['user_name']='user';
             if( $json_data['id'] == $product['id'] ) {
                 $_SESSION['cart'][]=[ 
                     $product['id'],
