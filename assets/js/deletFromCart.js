@@ -32,7 +32,7 @@ export async function delFromCart() {
                 } else {
                     console.error(data.message);
                 }
-                
+                location.reload();
             } catch (error) {
                 console.error('Error:', error);
             }
