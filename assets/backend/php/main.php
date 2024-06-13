@@ -10,6 +10,7 @@ foreach ($products as $product) {
         <h2>{$product['name']}</h2>
         <p>Price: {$product['price']}</p>
         <img src='{$product['image']}' alt='{$product['name']}'>
+        <button class='add' id='addProduct_{$product['id']}'>add</button>
 
     </div>";
 }
