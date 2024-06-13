@@ -1,6 +1,7 @@
 export async function delFromCart() {
     const delbuttons = document.querySelectorAll('.del_button');
-    let url = 'http://localhost/project/az-store/assets/backend/php/deleteFromCart.php'; // replace with your URL
+
+    let url = 'http://localhost/project/az-store/assets/backend/php/deletFromCart.php'; // replace with your URL
 
     delbuttons.forEach(delbutton => {
         delbutton.addEventListener('click', async event => {
@@ -16,13 +17,22 @@ export async function delFromCart() {
             };
 
             try {
+
                 let response = await fetch(url, options);
+                let data = await response.json();
+                console.log(data);
+
                 if (!response.ok) {
                     let error = await response.text();
                     throw new Error(error);
                 }
-                let data = await response.json();
-                console.log(data);
+                if (data.status === 'success') {
+                    console.log(data.message);
+                    console.log('Received data:', data.data);
+                } else {
+                    console.error(data.message);
+                }
+                
             } catch (error) {
                 console.error('Error:', error);
             }

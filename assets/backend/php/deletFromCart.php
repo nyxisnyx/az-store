@@ -1,18 +1,29 @@
 <?php
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
-    // Get the raw POST data
+    
     $data = file_get_contents('php://input');
     $json_data = json_decode($data, true);
 
     $id = $json_data['id'];
 
-    // Here, you can write the code to delete the item with this id from the database
+    foreach ($_SESSION['cart'] as $key => $value) {
+        if ($key == $id) {
+            
+            //remove the the item from the session
+            unset($_SESSION['cart'][$key]);
 
-    // Then, you can send a response back to the client
+            // re-index the array
+            $_SESSION['cart'] = array_values($_SESSION['cart']);
+            break;
+        }
+    }
+    
     echo json_encode([
         'status' => 'success',
         'message' => 'Item deleted successfully',
-        'data'=> $id
+        'data'=> $_SESSION['cart'],
     ]);
 }
 
