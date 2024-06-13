@@ -11,10 +11,6 @@
                 <input type="text" id="last-name" name="last-name" required> <!-- last-name -->
             </div>
             <div>
-                <label for="pass">Password (8 characters minimum):</label>
-                <input type="password" id="pass" name="password" minlength="8" required />
-            </div>
-            <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required> <!-- email -->
             </div>
