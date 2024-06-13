@@ -51,11 +51,64 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+#header {
+  background-color: #111826;
+  color: #fff;
+  display: flex;
+  border-top: 1px solid #373a42;
+  padding-top: 2vh;
+}
+#header .headerLeft {
+  width: 50%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header .headerLeft h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1em;
+}
+#header .headerLeft h1 .highlight {
+  color: #2664eb;
+}
+#header .headerLeft .seeStore {
+  padding: 1rem;
+  background: rgb(57, 126, 237);
+  background: linear-gradient(90deg, rgb(57, 126, 237) 0%, rgb(31, 60, 140) 100%);
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#header .headerRight {
+  width: 50%;
+}
+#header .headerRight img {
+  z-index: 10;
+  position: relative;
+  width: 80%;
+}
+#header .headerRight .nikeBrand {
+  font-size: 15em;
+  max-height: 1px;
+  overflow: visible;
+  position: relative;
+  top: 25%;
+  z-index: 5;
+  -webkit-text-stroke: 2px #373a42;
+  color: #111826;
+  text-transform: uppercase;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   width: 100vw;
   background-color: #111826;
   align-items: center;
@@ -144,6 +197,7 @@ button:hover {
 
 body {
   padding: 0%;
+  overflow-x: hidden;
 }
 body main {
   background: rgb(0, 0, 0);
