@@ -12,11 +12,7 @@
         <?php
             include('./assets/backend/php/navbar.php');
         ?>
-        <?php 
-
-           include('./assets/backend/php/login.php');
-        
-        ?>
+   
     </header>
     <main>
         <?php 

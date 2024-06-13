@@ -1,7 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/style.css">
+    <script defer type="module" src="./../../js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
 
-
-<div class="container" id="registration-form-container">
+<header>
+        <?php
+            include('./navbar.php');
+        ?>
+   
+    </header>
+    <main>
+    <div class="container" id="registration-form-container">
         <h1>Formulaire d'inscription</h1>
         <form action="#" method="post">
             <!-- form for login -->
@@ -38,8 +54,20 @@
             </div>
         </form>
     </div>
+        <?php 
+            include('./main.php');
+        ?>
+    </main>
+    <footer>
+        <?php
+            include('./footer.php');
+        ?>
+    </footer>
 
-    
+</body>
+</html>
+
+
     <?php 
 
 function sanitize($data) {
