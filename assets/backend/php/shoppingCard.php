@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./../../../assets/js/DeletFromCart.js" type="module"></script>
+    <script defer src="./../../../assets/js/deletFromCart.js" type="module"></script>
     <title>shopingCart</title>
 </head>
 <body>
