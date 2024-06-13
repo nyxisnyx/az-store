@@ -10,6 +10,6 @@
 
     <a href="#" id="navcart">
         <img src="/assets/images/shopping-cart.svg" alt="shopping cart logo">
-        <p>Login</p>
+        <p id="login-modale">Login</p>
     </a>
 </nav>

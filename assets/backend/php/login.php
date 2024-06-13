@@ -1,4 +1,7 @@
-<div class="container">
+
+
+
+<div class="container" id="registration-form-container">
         <h1>Formulaire d'inscription</h1>
         <form action="#" method="post">
             <!-- form for login -->
@@ -36,6 +39,7 @@
         </form>
     </div>
 
+    
     <?php 
 
 function sanitize($data) {
@@ -54,13 +58,13 @@ function removeSpecialChars($str) {
 
         $firstName = removeSpecialChars(sanitize($_POST['first-name']));
         $lastName = removeSpecialChars(sanitize($_POST['last-name']));
-        $email = sanitize($_POST['email']); // Pour l'email, on garde les caractères spéciaux nécessaires
+        $email = sanitize($_POST['email']); 
         $address = removeSpecialChars(sanitize($_POST['address']));
         $city = removeSpecialChars(sanitize($_POST['city']));
         $zipCode = removeSpecialChars(sanitize($_POST['zip-code']));
         $country = removeSpecialChars(sanitize($_POST['country']));
         $password = removeSpecialChars(sanitize($_POST['password']));
-    
+   
 
         // verification if we take all informations 
         // echo $firstName . "<br>";
@@ -74,5 +78,9 @@ function removeSpecialChars($str) {
     }
     
     
-    
+
+
+        include('session.php');
+
+
     ?>
