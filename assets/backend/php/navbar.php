@@ -9,7 +9,7 @@
     </div>
 
     <a href="#" id="navcart">
-        <img src="" alt="shopping cart logo">
+        <img src="/assets/images/shopping-cart.svg" alt="shopping cart logo">
         <p>Login</p>
     </a>
 </nav>
