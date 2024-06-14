@@ -20,14 +20,16 @@
 
             <div class="headerRight">
                 <p class="nikeBrand headerElement">nike</p>
-                <img src="/assets/images/shoes/shoe_one.png" class="headerElement">
+                <img src="/Becode/az-store/assets/images/shoes/shoe_one.png" class="headerElement">
             </div>
         </section>
     </header>
     <main>
-        <?php 
+        <section id="products">
+            <?php 
             include('./assets/backend/php/main.php');
-        ?>
+            ?>
+        </section>
     </main>
     <footer>
         <?php

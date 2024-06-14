@@ -202,4 +202,11 @@ body {
 body main {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(17, 24, 38) 100%);
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body main .cards {
+  margin: 2%;
 }/*# sourceMappingURL=style.css.map */

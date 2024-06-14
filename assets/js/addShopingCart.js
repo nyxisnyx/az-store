@@ -1,6 +1,6 @@
 export function addToCarts() {
     const buttons = document.querySelectorAll('.add');
-    let url = 'http://localhost/project/az-store/assets/backend/php/addToCart.php';
+    let url = 'http://localhost/Becode/az-store/assets/backend/php/addToCart.php';
     buttons.forEach(button => {
         button.addEventListener('click', async event => {
 

@@ -1,7 +1,7 @@
 export async function delFromCart() {
     const delbuttons = document.querySelectorAll('.del_button');
 
-    let url = 'http://localhost/project/az-store/assets/backend/php/deletFromCart.php'; // replace with your URL
+    let url = 'http://localhost/Becode/az-store/assets/backend/php/deletFromCart.php'; // replace with your URL
 
     delbuttons.forEach(delbutton => {
         delbutton.addEventListener('click', async event => {
