@@ -8,7 +8,7 @@ export function addToCarts() {
                 const id = event.target.id.replace('addProduct_', '');
                 // console.log(`Product ID:${id}`);
 
-                const response = await fetch('http://localhost/project/az-store/assets/backend/php/addToCart.php', {
+                const response = await fetch('http://localhost/az-store/assets/backend/php/addToCart.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
