@@ -7,6 +7,7 @@ body {
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(17,24,38,1) 100%);
         padding-left:5%;
         padding-right:5%;
+        border-bottom:#373a42 1px solid;
 
         h2 {
             font-size:2rem;
@@ -66,6 +67,87 @@ body {
             width:50%;
             margin-left:auto;
             margin-right:auto;
+            color:$white;
+            text-align:center;
+            margin-top:4rem;
+
+            img {
+                width:50%;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:1rem;
+            }
+
+            #bestQuality {
+                font-size:4em;
+                font-weight: 700;
+                line-height: 1em;
+                text-transform: uppercase;
+
+                .highlight {
+                    color:$mediumblue;
+                }
+            }
+
+            #aboutProduct {
+                font-size:1em;
+            }
+        }
+
+        #testimonials {
+            margin-top:5rem;
+            display:flex;
+            width: 90%;
+            margin-left:auto;
+            margin-right:auto;
+            color:$white;
+            text-align:center;
+            justify-content: space-evenly;
+            padding-bottom: 5rem;
+
+            .testimonial {
+                width: 30%;
+
+                img{
+                    border-radius: 50%;
+                    width:25%;
+                    margin-left:auto;
+                    margin-right:auto;
+                    margin-bottom: 0.5rem;
+                }
+
+                .testimTitle {
+                    font-weight:bold;
+                    margin-bottom:1rem;
+                }
+
+                .testimText {
+                    color:#a2a4a6;
+                }
+
+            }
+        }
+    }
+
+    footer {
+        background-color:#000;
+        padding-top:2%;
+        padding-bottom:2%;
+        
+        #footerlinks {
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            width:30%;
+            margin-left:auto;
+            margin-right:auto;
+
+            a {
+                color: $white;
+                font-size: 1.3rem;
+                text-decoration: none;
+                display:block;
+            }
         }
     }
 }

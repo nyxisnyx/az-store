@@ -33,11 +33,25 @@
         </section>
         <section id="featured">
             <img src="/Becode/az-store/assets/images/shoes/shoe_two.png" alt="Our beautiful purple Nike sneaker">
-            <p>We provide you the <span class="highlight">best</span> quality</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit facilis necessitatibus explicabo ratione delectus? Iure praesentium necessitatibus ipsum eos quae possimus exercitationem, voluptatum magni porro illo beatae facere quo?</p>
+            <p id="bestQuality">We provide you the <span class="highlight">best</span> quality</p>
+            <p id="aboutProduct">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit facilis necessitatibus explicabo ratione delectus?</p>
         </section>
         <section id="testimonials">
-            
+            <div class=testimonial>
+                <img src="/Becode/az-store/assets/images/people/image-emily.jpg" alt="A white woman with blonde hair and a floral pattern on her pink shirt">
+                <p class="testimTitle">Emily from xyz</p>
+                <p class="testimText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit facilis necessitatibus explicabo ratione delectus?</p>
+            </div>
+            <div class=testimonial>
+                <img src="/Becode/az-store/assets/images/people/image-thomas.jpg" alt="A dark-skinned man with neatly-combed black hair and a short beard">
+                <p class="testimTitle">Thomas from corporate</p>
+                <p class="testimText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit facilis necessitatibus explicabo ratione delectus?</p>
+            </div>
+            <div class=testimonial>
+                <img src="/Becode/az-store/assets/images/people/image-jennie.jpg" alt="A white woman with short, dark hair and a black tank top">
+                <p class="testimTitle">Jennie from Nike</p>
+                <p class="testimText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit facilis necessitatibus explicabo ratione delectus?</p>
+            </div>
         </section>
     </main>
     <footer>
