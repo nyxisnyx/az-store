@@ -7,10 +7,11 @@ foreach ($products as $product) {
     echo "
     <div id='card_{$product['id']}' class='cards'>
 
-        <h2>{$product['name']}</h2>
-        <p>Price: {$product['price']}</p>
         <img src='{$product['image']}' alt='{$product['name']}'>
-        <button class='add' id='addProduct_{$product['id']}'>add</button>
+        <div class='bottomCard'>
+        <div class='cardLeft'><h3>{$product['name']}</h3>
+        <p>{$product['price']}€</p></div>
+        <button class='add cardRight' id='addProduct_{$product['id']}'>Add to cart</button></div>
 
     </div>";
 }
