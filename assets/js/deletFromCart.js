@@ -1,5 +1,6 @@
 export async function delFromCart() {
     const delbuttons = document.querySelectorAll('.del_button');
+    
 
     let url = 'http://localhost/Becode/az-store/assets/backend/php/deletFromCart.php'; // replace with your URL
 
@@ -38,6 +39,24 @@ export async function delFromCart() {
             }
         });
     });
+
+
+// ====================================================================================== btn add and del quantity
+    const btn_add = document.querySelectorAll('.add_qt');
+    btn_add.forEach(btn =>{
+        btn.addEventListener('click',event=>{
+            console.log(btn.id);
+        })
+    });
+
+    const btn_del = document.querySelectorAll('.del_qt');
+    btn_del.forEach(btn =>{
+        btn.addEventListener('click',event=>{
+            console.log(btn.id);
+        })
+    });
+
+
 }
 
             

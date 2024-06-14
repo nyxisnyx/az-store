@@ -37,20 +37,6 @@ session_start();
             ";
         }
     ?>
-    <script>
-        const btn_add = document.querySelectorAll('.add_qt');
-        btn_add.forEach(btn =>{
-            btn.addEventListener('click',event=>{
-                console.log(btn.id);
-            })
-        });
-        const btn_del = document.querySelectorAll('.del_qt');
-        btn_del.forEach(btn =>{
-            btn.addEventListener('click',event=>{
-                console.log(btn.id);
-            })
-        });
-    </script>
     </main>
     <footer>
 
