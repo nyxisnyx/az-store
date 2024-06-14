@@ -6,10 +6,7 @@ body {
 
     main {
         .container {
-            // z-index: 1;
-            // position: absolute;
-            // background-color: url('../backend/php/login.php');
-            display: none;
+            display: block;  
             max-width: 600px;
             margin: 0 auto;
             background: #fff;
@@ -47,7 +44,7 @@ body {
                     width: 100%;
                     padding: 10px;
                     background-color: #5cb85c;
-                    border: none;
+                    // border: none;
                     border-radius: 3px;
                     color: #fff;
                     font-size: 16px;

@@ -111,7 +111,7 @@ function removeSpecialChars($str) {
     
 
 
-        include('session.php');
+
 
 
     ?>

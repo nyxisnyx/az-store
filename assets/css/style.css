@@ -152,7 +152,7 @@ body {
   background-color: #f4f4f4;
 }
 body main .container {
-  display: none;
+  display: block;
   max-width: 600px;
   margin: 0 auto;
   background: #fff;
@@ -185,7 +185,6 @@ body main .container form button {
   width: 100%;
   padding: 10px;
   background-color: #5cb85c;
-  border: none;
   border-radius: 3px;
   color: #fff;
   font-size: 16px;
