@@ -18,11 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Item exists, increment the quantity
                     $_SESSION['cart'][$product['id']]['quantity']++;
                 } else {
-                    // Item doesn't exist, add a new entry
+                    // Item doesn't exist, add a new item
                     $_SESSION['cart'][$product['id']] = [
+                        'id' => $product['id'],
                         'name' => $product['name'],
                         'price' => $product['price'],
                         'image' => $product['image'],
+                        'quantity' => 1
                     ];
                 }  
                 }
