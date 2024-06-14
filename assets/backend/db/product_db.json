@@ -1,28 +1,28 @@
 [
     {
         "id":0,
-        "name":"nike",
+        "name":"NIKE Air",
         "price":234,
         "image":"./assets/images/shoes/shoe_one.png"
 
     },
     {
         "id":1,
-        "name":"nike",
+        "name":"NIKE Air",
         "price":234,
         "image":"./assets/images/shoes/shoe_one.png"
 
     },
     {
         "id":2,
-        "name":"nike",
+        "name":"NIKE Air",
         "price":234,
         "image":"./assets/images/shoes/shoe_one.png"
 
     },
     {
         "id":3,
-        "name":"nike",
+        "name":"NIKE Air",
         "price":234,
         "image":"./assets/images/shoes/shoe_one.png"
 

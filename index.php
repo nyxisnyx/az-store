@@ -25,6 +25,7 @@
         </section>
     </header>
     <main>
+        <h2><span class="highlight">Our</span> last products</h2>
         <section id="products">
             <?php 
             include('./assets/backend/php/main.php');
