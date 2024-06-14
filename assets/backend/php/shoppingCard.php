@@ -12,6 +12,13 @@ session_start();
     <title>shopingCart</title>
 </head>
 <body>
+    <header>
+
+        <?php
+                include('./../../../assets/backend/php/navbar.php');
+        ?>
+
+    </header>
     <main>
     <?php
         foreach ($_SESSION['cart'] as $key => $item) {
@@ -45,5 +52,12 @@ session_start();
         });
     </script>
     </main>
+    <footer>
+
+        <?php
+            include('./../../../assets/backend/php/footer.php');
+        ?>
+
+    </footer>
 </body>
 </html>

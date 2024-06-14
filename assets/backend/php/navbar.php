@@ -1,5 +1,5 @@
 <nav>
-    <a href="#" id="brandname">AZ[store]</a>
+    <a href="http://localhost/Becode/az-store" id="brandname">AZ[store]</a>
 
     <div id="navlinks">
         <a href="#" class="navlink">Home</a>
