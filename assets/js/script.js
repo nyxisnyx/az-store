@@ -1,3 +1,5 @@
+import { addToCarts } from "./addShopingCart.js";
+addToCarts();
 import { selectForm } from "./selectInformations.js";
 selectForm();
 import { selectButtonDeleteForm } from "./selectInformations.js";

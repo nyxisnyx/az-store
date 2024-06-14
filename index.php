@@ -12,12 +12,24 @@
         <?php
             include('./assets/backend/php/navbar.php');
         ?>
-   
+        <section id="header">
+            <div class="headerLeft">
+                <h1>Shoe the right <span class="highlight">one</span>.</h1>
+                <div class="seeStore headerElement">See our store</div>
+            </div>
+
+            <div class="headerRight">
+                <p class="nikeBrand headerElement">nike</p>
+                <img src="/Becode/az-store/assets/images/shoes/shoe_one.png" class="headerElement">
+            </div>
+        </section>
     </header>
     <main>
-        <?php 
+        <section id="products">
+            <?php 
             include('./assets/backend/php/main.php');
-        ?>
+            ?>
+        </section>
     </main>
     <footer>
         <?php
