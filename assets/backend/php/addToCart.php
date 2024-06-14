@@ -14,11 +14,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         foreach( $products as $product ) {
             if( $json_data['id'] == $product['id'] ) {
-                $_SESSION['cart'][]=[ 
-                    $product['id'],
-                     $product['name'],
-                      $product['price'],
-                       $product['image']];  
+                if (isset($_SESSION['cart'][$product['id']])) {
+                    // Item exists, increment the quantity
+                    $_SESSION['cart'][$product['id']]['quantity']++;
+                } else {
+                    // Item doesn't exist, add a new entry
+                    $_SESSION['cart'][$product['id']] = [
+                        'name' => $product['name'],
+                        'price' => $product['price'],
+                        'image' => $product['image'],
+                    ];
+                }  
                 }
         }
 
