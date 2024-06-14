@@ -40,6 +40,4 @@ export async function delFromCart() {
     });
 }
 
-delFromCart();
-
             

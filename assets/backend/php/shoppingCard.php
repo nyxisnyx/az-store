@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./../../../assets/js/deletFromCart.js" type="module"></script>
+    <script defer type="module" src="./../../../assets/js/script.js"></script>
     <link rel="stylesheet" href="./../../../assets/css/style.css">
     <title>shopingCart</title>
 </head>
@@ -36,7 +36,13 @@ session_start();
             btn.addEventListener('click',event=>{
                 console.log(btn.id);
             })
-        })
+        });
+        const btn_del = document.querySelectorAll('.del_qt');
+        btn_del.forEach(btn =>{
+            btn.addEventListener('click',event=>{
+                console.log(btn.id);
+            })
+        });
     </script>
     </main>
 </body>
