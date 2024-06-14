@@ -9,8 +9,17 @@ body {
         padding-right:5%;
 
         h2 {
-            font-size:2.5rem;
+            font-size:2rem;
             font-weight: 700;
+            color:$white;
+            width:95%;
+            border-top: 1px solid #373a42;
+            padding-top:5%;
+            margin-left:2%;
+
+            .highlight {
+                color:$mediumblue;
+            }
         }
 
         #products {
@@ -51,6 +60,12 @@ body {
                     }
                 }
             }
+        }
+
+        #featured {
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
         }
     }
 }

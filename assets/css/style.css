@@ -206,8 +206,16 @@ body main {
   padding-right: 5%;
 }
 body main h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
+  color: #fff;
+  width: 95%;
+  border-top: 1px solid #373a42;
+  padding-top: 5%;
+  margin-left: 2%;
+}
+body main h2 .highlight {
+  color: #2664eb;
 }
 body main #products {
   display: flex;
@@ -241,4 +249,9 @@ body main #products .cards .bottomCard .cardRight {
   margin-bottom: 0.3rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
+}
+body main #featured {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */

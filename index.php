@@ -31,6 +31,14 @@
             include('./assets/backend/php/main.php');
             ?>
         </section>
+        <section id="featured">
+            <img src="/Becode/az-store/assets/images/shoes/shoe_two.png" alt="Our beautiful purple Nike sneaker">
+            <p>We provide you the <span class="highlight">best</span> quality</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit facilis necessitatibus explicabo ratione delectus? Iure praesentium necessitatibus ipsum eos quae possimus exercitationem, voluptatum magni porro illo beatae facere quo?</p>
+        </section>
+        <section id="testimonials">
+            
+        </section>
     </main>
     <footer>
         <?php
