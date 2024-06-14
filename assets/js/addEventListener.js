@@ -1,42 +1,13 @@
-import { selectLoginButton } from "./selectInformations.js";
-// import { selectForm } from "./selectInformations.js";
-import { selectButtonDeleteForm } from "./selectInformations.js";
+import { selectSvgShoppingCard } from "./selectInformations.js";
 
-let SelectLoginButton = selectLoginButton();
-// const SELECTFORM = selectForm();
-let selectButtonDeleteForms = selectButtonDeleteForm();
+const SVGSELECT = selectSvgShoppingCard();
 
+function addEventShoppingCard(){ //Select of the icon 
 
-
-
-function addEventOnLogin(){
-
-    SelectLoginButton.addEventListener('click', event =>{
-        if(SelectLoginButton){
-            
-            document.getElementById('registration-form-container').style.display = 'block';
-
-
-        }else {
-            console.log("ta condition est à chier sale merde");
-        }
+    SVGSELECT.addEventListener('click', shoppingCard =>{
+        window.location.href = '../az-store/assets/backend/php/shoppingCard.php';
     })
-    // console.log("VOICI LE BOUTON ZEBI"+SelectLoginButton);
-}
-
-function addEventBtnDelete(){
-    let supp = document.querySelector('.btn-display-n');
-    console.log(supp);
     
-   supp.addEventListener('click', events =>{
-
-    if(supp){
-
-        document.getElementById('registration-form-container').style.display = 'none';
-    }
-   })
-
 }
 
-export {addEventOnLogin};
-export {addEventBtnDelete};
+export {addEventShoppingCard};

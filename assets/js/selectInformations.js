@@ -1,26 +1,9 @@
 
-function selectForm(){
+function selectSvgShoppingCard(){
+    let selectSvg = document.querySelector('#selectSvg');
+    console.log(selectSvg);
 
-    let form = document.querySelector('#registration-form-container');
-    console.log(form);
-
-
+    return selectSvg;
 }
 
-function selectLoginButton(){
-    let login = document.querySelector('#login-modale');
-    console.log(login);
-
-    return login;
-}
-
-function selectButtonDeleteForm(){
-    let supp = document.querySelector('.btn-display-n');
-    console.log(supp);
-
-    return supp;
-}
-
-export {selectForm};
-export {selectLoginButton};
-export {selectButtonDeleteForm};
+export {selectSvgShoppingCard};
