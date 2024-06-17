@@ -1,5 +1,6 @@
 <?php
 session_start();
+$url = "add_del_qant.php";
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +32,7 @@ session_start();
                 <img src='./../../../{$item['image']}' alt='{$item['name']}'>
                 <p> Total price : {$total_price}</p>
                 <button class='del_button' id='$key'>X</button>
-                <button class='add_qt' id='addQt_{$key}'>+</button>
+                <button type='submit' action = '{$url}'class='add_qt' id='addQt_{$key}'>+</button>
                 <button class='del_qt' id='delQt_{$key}'>-</button> 
             </div>
             ";
